@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="DE" onclick="deleteLastChar()">
+                    <input type="button" value="." onclick="writeDecimal()">
+                    <input type="button" value="/" onclick="writeOperator('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="writeNumber('7')">
+                    <input type="button" value="8" onclick="writeNumber('8')">
+                    <input type="button" value="9" onclick="writeNumber('9')">
+                    <input type="button" value="*" onclick="writeOperator('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="writeNumber('4')">
+                    <input type="button" value="5" onclick="writeNumber('5')">
+                    <input type="button" value="6" onclick="writeNumber('6')">
+                    <input type="button" value="-" onclick="writeOperator('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="writeNumber('1')">
+                    <input type="button" value="2" onclick="writeNumber('2')">
+                    <input type="button" value="3" onclick="writeNumber('3')">
+                    <input type="button" value="+" onclick="writeOperator('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="writeNumber('00')">
+                    <input type="button" value="0" onclick="writeNumber('0')">
+                    <input type="button" value="=" class="equal"  onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
